@@ -41,13 +41,12 @@ const Layout = () => {
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
-                <br />
-                <div id='layout' style={{ height: '75vh', width: '100%', border: '1px solid skyblue', borderRadius: '10px' }} >
+                <div id='layout' style={{margin:'10px 0px', height: '75vh', width: '100%', borderRadius: '10px',boxShadow:'0px 0px 2px grey'}} >
                     <Outlet />
                 </div>
                 {/*<hr />*/}
 
-                <div style={{ fontWeight: '500', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
+                <div style={{margin:'5px 0px', fontWeight: '500', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
                     <Row>
                         <Col ></Col>
                         <Col xs={12}>

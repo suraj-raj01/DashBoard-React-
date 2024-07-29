@@ -3,30 +3,9 @@
     {
       "id": "1",
       "rollno": "1",
-      "name": "SURAJ KUMAR",
-      "city": "BIHAR",
-      "fees": "400000"
-    },
-    {
-      "id": "2",
-      "rollno": "2",
-      "name": "RAJAN KUMAR",
-      "city": "BHOPAL",
-      "fees": "400000"
-    },
-    {
-      "id": "3",
-      "rollno": "3",
-      "name": "VIVEK KUMAR",
-      "city": "BHOPAL",
-      "fees": "350000"
-    },
-    {
-      "id": "4",
-      "rollno": "4",
-      "name": "SHIVAM RAWAT",
-      "city": "BHOPAL",
-      "fees": "400000"
+      "name": "PAWAN KUMAR",
+      "city": "INDORE",
+      "fees": "450000"
     }
   ]
 }

@@ -56,7 +56,7 @@ const Search = () => {
                 <thead>
                     <tr>
                         <th>Rollno</th>
-                        <th>Name</th>
+                        <th>Student Name</th>
                         <th>City</th>
                         <th>Fees</th>
                     </tr>

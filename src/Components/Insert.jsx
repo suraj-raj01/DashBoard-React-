@@ -4,6 +4,11 @@ import Form from 'react-bootstrap/Form';
 import { useState } from 'react';
 import axios from "axios";
 import { useNavigate } from 'react-router-dom';
+
+import React from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const Insert = () => {
     const myNav1 = useNavigate();
     const [input, setInput] = useState({});
@@ -18,7 +23,7 @@ const Insert = () => {
         let api = "http://localhost:3000/Student";
         axios.post(api, input).then((res) => {
             console.log(res.data);
-            alert("data saved!!!")
+            toast.success("Data edited Successfully!!!");
         })
     }
     const jump1 = () => {
@@ -60,6 +65,7 @@ const Insert = () => {
                     <button id="jump-btn2" onClick={jump2}>⟫</button>
                 </Form>
             </Container>
+            <ToastContainer />
         </>
     )
 }

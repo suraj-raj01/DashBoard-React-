@@ -2,6 +2,11 @@ import axios from "axios";
 import Table from 'react-bootstrap/Table';
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+
+import React from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const Update = () => {
     const myNav = useNavigate();
     const myNav1 = useNavigate();
@@ -21,7 +26,7 @@ const Update = () => {
         let url = `http://localhost:3000/Student/${myid}`;
         axios.delete(url).then((res) => {
             console.log(res.data)
-            alert("data deleted!!!")
+            toast.warning("Record deleted Successfully!!");
             loadData();
         })
     }
@@ -78,6 +83,7 @@ const Update = () => {
                     <button id="jump-btn2" onClick={jump2}>⟫</button>
                 </Table>
             </div>
+            <ToastContainer />
         </>
     )
 }
