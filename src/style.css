@@ -45,27 +45,31 @@ body{
 
 #jump-btn1{
     position: fixed;
-    top: 45%;
-    left: 3.6%;
+    top: 48%;
+    left: 3%;
     font-size: 20px;
     padding: 10px 15px;
     background-color: transparent;
     border: none;
     font-size: 30px;
+    color: gainsboro;
 }
 #jump-btn2{
     position: fixed;
-    top: 45%;
-    right: 3.6%;
+    top: 48%;
+    right: 3%;
     font-size: 20px;
     padding: 10px 15px;
     background-color: transparent;
     border: none;
     font-size: 30px;
+    color: gainsboro;
 }
 #jump-btn1:hover{
-    text-shadow: 0px 0px 15px grey;
+    text-shadow: 0px 0px 15px gainsboro;
+    color: gray;
 }
 #jump-btn2:hover{
-    text-shadow: 0px 0px 15px grey;
+    text-shadow: 0px 0px 15px gainsboro;
+    color: gray;
 }
