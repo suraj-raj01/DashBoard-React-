@@ -1,0 +1,71 @@
+body{
+    background-color: white;
+}
+#navbar{
+    margin-top: 10px;
+    border-radius: 8px;
+    padding: 15px 0px;
+}
+#form input{
+    box-shadow: 0px 0px 1px;
+    border-radius: 0px;
+}
+#form input::placeholder{
+    color: gray;
+}
+
+#table th{
+    background-color: skyblue;
+}
+#table td{
+    background-color: white;
+    color:black;
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid white;
+}
+#search{
+    padding: 6px;
+    border: 1px solid skyblue;
+}
+#search-btn{
+    padding: 6px 15px;
+    background-color: skyblue;
+    border: 1px solid skyblue;
+    font-weight: 400;
+}
+#btn{
+    padding: 0px;
+    background-color: transparent;
+    border: none;
+}
+#btn img{
+    filter: drop-shadow(0px 0px 2px skyblue);
+}
+
+#jump-btn1{
+    position: fixed;
+    top: 45%;
+    left: 3.6%;
+    font-size: 20px;
+    padding: 10px 15px;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+}
+#jump-btn2{
+    position: fixed;
+    top: 45%;
+    right: 3.6%;
+    font-size: 20px;
+    padding: 10px 15px;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+}
+#jump-btn1:hover{
+    text-shadow: 0px 0px 15px grey;
+}
+#jump-btn2:hover{
+    text-shadow: 0px 0px 15px grey;
+}
