@@ -1,5 +1,5 @@
 body{
-    background-color: #fff;
+    background-color: white;
 }
 #navbar{
     margin-top: 10px;
@@ -12,9 +12,10 @@ body{
     border-radius: 0px;
     text-transform: capitalize;
     border-radius: 5px;
+    background-color:'transparent';
 }
 #form input::placeholder{
-    color: #8080807e;
+    color: #8080997e;
 }
 
 #table th{
