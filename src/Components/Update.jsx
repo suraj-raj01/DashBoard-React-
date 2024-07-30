@@ -68,12 +68,12 @@ const Update = () => {
                 <Table striped bordered hover id='table'>
                     <thead>
                         <tr>
-                            <th>Id</th>
-                            <th>Rollno</th>
-                            <th>Name</th>
-                            <th>City</th>
-                            <th>Fees</th>
-                            <th>Update</th>
+                            <th>ID</th>
+                            <th>ROLL NO</th>
+                            <th>NAME</th>
+                            <th>CITY</th>
+                            <th>FEES</th>
+                            <th>UPDATE</th>
                         </tr>
                     </thead>
                     <tbody>

@@ -18,10 +18,11 @@ const Search = () => {
         return (
             <>
                 <tr>
+                    <td>{key.id}</td>
                     <td>{key.rollno}</td>
                     <td>{key.name}</td>
                     <td>{key.city}</td>
-                    <td>{key.fees}</td>
+                    <td>{key.fees+" INR"}</td>
                 </tr>
             </>
         )
@@ -41,20 +42,21 @@ const Search = () => {
             <button id="search-btn" onClick={mySearch}>Search</button><br /> */}
 
             <Form className="d-flex">
-                <Form.Control style={{width:'300px'}}
+                <Form.Control style={{ width: '300px' }}
                     className="me-2"
                     aria-label="Search"
-                    placeholder='enter rollno...'
+                    placeholder='Enter rollno...'
                     value={rollno} onChange={(e) => {
                         setRollno(e.target.value)
                     }}
                 />
-                <Button variant="outline-success" onClick={mySearch}>Search</Button>
+                <Button variant="outline-info" onClick={mySearch}>Search</Button>
             </Form>
             <hr />
             <Table striped bordered hover id='table'>
                 <thead>
                     <tr>
+                        <th>Id</th>
                         <th>Rollno</th>
                         <th>Student Name</th>
                         <th>City</th>

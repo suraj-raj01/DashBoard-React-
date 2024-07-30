@@ -23,7 +23,7 @@ const Display = () => {
                     <td>{key.rollno}</td>
                     <td>{key.name}</td>
                     <td>{key.city}</td>
-                    <td>{key.fees}</td>
+                    <td>{key.fees+" INR "}</td>
                 </tr>
             </>
         )
@@ -41,11 +41,11 @@ const Display = () => {
                 <Table striped bordered hover id='table'>
                     <thead>
                         <tr>
-                            <th>Id</th>
-                            <th>Rollno</th>
-                            <th>Name</th>
-                            <th>City</th>
-                            <th>Fees</th>
+                            <th>ID</th>
+                            <th>ROLL NO</th>
+                            <th>NAME</th>
+                            <th>CITY</th>
+                            <th>FEES</th>
                         </tr>
                     </thead>
                     <tbody>

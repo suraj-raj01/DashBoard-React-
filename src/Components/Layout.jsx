@@ -7,8 +7,18 @@ import Navbar from 'react-bootstrap/Navbar';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+import React from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+import { useNavigate } from "react-router-dom";
 const Layout = () => {
-   
+const navigate = useNavigate();
+function searchData()
+{
+    navigate("/search");
+    toast.success("Search Data here...");
+}
     return (
         <>
             <div>
@@ -28,7 +38,12 @@ const Layout = () => {
                                 <Nav.Link as={Link} to="update">Update</Nav.Link>
                                 <Nav.Link as={Link} to="display">Display</Nav.Link>
                             </Nav>
-
+                            <Nav.Link as={Link} to="https://github.com/suraj-raj01/DashBoard-React-.git"> Get code </Nav.Link>
+                            &nbsp;&nbsp;&nbsp;
+                            <Nav.Link as={Link} to="https://github.com/suraj-raj01/DashBoard-React-.git"><i className="pi pi-github"></i></Nav.Link>
+                            &nbsp;&nbsp;&nbsp;
+                            <Nav.Link as={Link} to="/"><i className="pi pi-cog pi-spin"></i></Nav.Link>
+                            &nbsp;&nbsp;&nbsp;
                             <Form className="d-flex">
                                 <Form.Control
                                     className="me-2"
@@ -36,17 +51,17 @@ const Layout = () => {
                                     placeholder="Search"
                                     type="search"
                                 />
-                                <Button variant="outline-success">Search</Button>
+                                <Button variant="outline-info" onClick={searchData}>Search</Button>
                             </Form>
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
-                <div id='layout' style={{margin:'10px 0px', height: '75vh', width: '100%', borderRadius: '10px',boxShadow:'0px 0px 2px grey'}} >
+                <div id='layout' style={{ margin: '10px 0px', height: '75vh', width: '100%', borderRadius: '10px', boxShadow: '0px 0px 2px grey' }} >
                     <Outlet />
                 </div>
                 {/*<hr />*/}
 
-                <div style={{margin:'5px 0px', fontWeight: '500', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
+                <div style={{ margin: '5px 0px', fontWeight: '500', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
                     <Row>
                         <Col ></Col>
                         <Col xs={12}>
@@ -56,6 +71,7 @@ const Layout = () => {
                     </Row>
                 </div>
             </div>
+            <ToastContainer />
         </>
     )
 }

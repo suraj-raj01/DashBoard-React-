@@ -58,7 +58,7 @@ const Insert = () => {
                         <Form.Control type="text" name='fees' placeholder="student fees" value={input.fees} onChange={handleInput} />
                     </Form.Group>
                     <br />
-                    <Button variant="primary" onClick={handleSubmit}>
+                    <Button variant="info" onClick={handleSubmit}>
                         Submit
                     </Button>
                     <button id="jump-btn1" onClick={jump1}>⟪</button>

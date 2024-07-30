@@ -3,9 +3,23 @@
     {
       "id": "1",
       "rollno": "1",
-      "name": "PAWAN KUMAR",
+      "name": "SURAJ KUMAR",
       "city": "INDORE",
       "fees": "450000"
+    },
+    {
+      "id": "2",
+      "rollno": "20",
+      "name": "PAWAN KUMAR",
+      "city": "BHOPAL",
+      "fees": "450000"
+    },
+    {
+      "id": "3",
+      "rollno": "3",
+      "name": "RAJAN KUMAR",
+      "city": "BHOPAL",
+      "fees": "400000"
     }
   ]
 }

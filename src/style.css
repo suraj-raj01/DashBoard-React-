@@ -8,12 +8,13 @@ body{
 }
 
 #form input{
-    box-shadow: 0px 0px 1px;
+    box-shadow: 0px 0px 1px gainsboro;
     border-radius: 0px;
-    background-color: #fff;
+    text-transform: capitalize;
+    border-radius: 5px;
 }
 #form input::placeholder{
-    color: gray;
+    color: #8080807e;
 }
 
 #table th{
