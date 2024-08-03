@@ -24,6 +24,7 @@ const Insert = () => {
         axios.post(api, input).then((res) => {
             console.log(res.data);
             toast.success("Data edited Successfully!!!");
+            myNav1("/display");
         })
     }
     const jump1 = () => {
@@ -37,27 +38,27 @@ const Insert = () => {
             <Container style={{ height: '100%', display: 'flex', alignItems: 'start', justifyContent: 'center', backgroundColor: '', borderRadius: '10px' }}>
                 <Form id='form' style={{ width: '400px', color: 'black' }}>
                     <br />
-                    <center><h2 style={{ padding: '0px 20px' }}>INSERT DATA</h2></center><br />
+                    <center><h2 style={{ padding: '0px 20px' }}>INSERT STUDENT DATA</h2></center><br /><br/>
                     <Form.Group className="mb-3">
-                        <Form.Control type="text" name='id' placeholder="student id" value={input.id} onChange={handleInput} />
+                        <Form.Control type="text" name='id' placeholder="enrollment number" value={input.id} onChange={handleInput} />
                     </Form.Group>
 
                     <Form.Group className="mb-3">
-                        <Form.Control type="text" name='rollno' placeholder="student rollno" value={input.rollno} onChange={handleInput} />
+                        <Form.Control type="text" name='rollno' placeholder="roll number" value={input.rollno} onChange={handleInput} />
                     </Form.Group>
 
                     <Form.Group className="mb-3">
-                        <Form.Control type="text" name='name' placeholder="student name" value={input.name} onChange={handleInput} />
+                        <Form.Control type="text" name='name' placeholder="full name" value={input.name} onChange={handleInput} />
                     </Form.Group>
 
                     <Form.Group className="mb-3">
-                        <Form.Control type="text" name='city' placeholder="student city" value={input.city} onChange={handleInput} />
+                        <Form.Control type="text" name='city' placeholder="address" value={input.city} onChange={handleInput} />
                     </Form.Group>
 
                     <Form.Group className="mb-3">
-                        <Form.Control type="text" name='fees' placeholder="student fees" value={input.fees} onChange={handleInput} />
+                        <Form.Control type="text" name='fees' placeholder="semester fees" value={input.fees} onChange={handleInput} />
                     </Form.Group>
-                    <br />
+                    
                     <Button variant="info" onClick={handleSubmit}>
                         Submit
                     </Button>

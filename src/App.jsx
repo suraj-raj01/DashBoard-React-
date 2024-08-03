@@ -8,6 +8,7 @@ import Display from "./Components/Display";
 import Update from "./Components/Update";
 import EditData from "./Components/EditData.jsx";
 const App = () => {
+  
   return (
     <>
       <Container>

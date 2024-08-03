@@ -71,7 +71,7 @@ const Update = () => {
                             <th>ID</th>
                             <th>ROLL NO</th>
                             <th>NAME</th>
-                            <th>CITY</th>
+                            <th>ADDRESS</th>
                             <th>FEES</th>
                             <th>UPDATE</th>
                         </tr>

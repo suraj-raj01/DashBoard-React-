@@ -1,25 +1,11 @@
 {
   "Student": [
     {
-      "id": "1",
-      "rollno": "1",
+      "id": "AU210488",
+      "rollno": "R21ET1CS0066",
       "name": "SURAJ KUMAR",
-      "city": "INDORE",
-      "fees": "450000"
-    },
-    {
-      "id": "2",
-      "rollno": "20",
-      "name": "PAWAN KUMAR",
-      "city": "BHOPAL",
-      "fees": "450000"
-    },
-    {
-      "id": "3",
-      "rollno": "3",
-      "name": "RAJAN KUMAR",
-      "city": "BHOPAL",
-      "fees": "400000"
+      "city": "BAIRGANIA, SITAMARHI, BIHAR, INDIA",
+      "fees": "19,125.00"
     }
   ]
 }

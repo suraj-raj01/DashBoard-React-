@@ -17,10 +17,15 @@ import { useNavigate } from "react-router-dom";
 import { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import axios from 'axios';
-
-
-
-
+function myClick() {
+    setTimeout(
+      function() {
+        document.getElementById('navbar').style.display='block';
+        document.getElementById('layout').style.display='block';
+        document.getElementById('footer').style.display='block';
+      }, 1000);
+  }
+  myClick();
 
 const Layout = () => {
     const navigate = useNavigate();
@@ -64,16 +69,16 @@ const Layout = () => {
                 if (res.data[0].password == pwd) {
                     localStorage.setItem("uname", res.data[0].name)
                     localStorage.setItem("uemail", res.data[0].email)
-
                     mynav("/home");
                     setShowlogin(false)
+                    toast.success("Welcome Mr. "+res.data[0].name)
                 }
                 else {
-                    alert("Wrong Password!!!")
+                    toast.error("Wrong Password!!");
                 }
             }
             else {
-                alert("Invalid UserId")
+                toast.error("Invalid Username!!")
             }
 
         })
@@ -83,6 +88,7 @@ const Layout = () => {
         navigate("/search");
         toast.success("Search Data here...");
     }
+
     return (
         <>
             <div>
@@ -102,6 +108,7 @@ const Layout = () => {
                                 <Nav.Link as={Link} to="update">Update</Nav.Link>
                                 <Nav.Link as={Link} to="display">Display</Nav.Link>
                             </Nav>
+                            <div style={{display:'flex'}}>
                             <Nav.Link as={Link} to="/" onClick={handleShowlogin}><i className="pi pi-sign-in"></i></Nav.Link>
                             &nbsp;&nbsp;&nbsp;&nbsp;
                             <Nav.Link as={Link} to="/" onClick={handleShow}><i className="pi pi-user-plus"></i></Nav.Link>
@@ -109,6 +116,7 @@ const Layout = () => {
                             <Nav.Link as={Link} target="_blank" to="https://github.com/suraj-raj01/DashBoard-React-.git"><i className="pi pi-github"></i></Nav.Link>
                             &nbsp;&nbsp;&nbsp;
                             <Nav.Link as={Link} to="/"><i className="pi pi-cog pi-spin"></i></Nav.Link>
+                            </div>
                             &nbsp;&nbsp;&nbsp;
                             <Form className="d-flex">
                                 <Form.Control
@@ -127,7 +135,7 @@ const Layout = () => {
                 </div>
                 {/*<hr />*/}
 
-                <div style={{ margin: '5px 0px', fontWeight: '500', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
+                <div id="footer" style={{ margin: '5px 0px', fontWeight: '500', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
                     <Row>
                         <Col ></Col>
                         <Col xs={12}>

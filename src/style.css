@@ -6,6 +6,9 @@ body{
     border-radius: 8px;
     padding: 15px 0px;
 }
+#navbar  a{
+    font-weight: 500;
+}
 
 #form input{
     box-shadow: 0px 0px 1px gainsboro;
@@ -15,7 +18,7 @@ body{
     background-color:'transparent';
 }
 #form input::placeholder{
-    color: #8080997e;
+    color: #808099af;
 }
 
 #table th{
@@ -77,4 +80,27 @@ body{
 #jump-btn2:hover{
     text-shadow: 0px 0px 15px gainsboro;
     color: gray;
+}
+@media (max-width:430px)
+{
+    #table td{
+        font-size: 8px;
+    }
+    #table th{
+        font-size: 10px;
+    }
+    #table td img{
+        height: 12px;
+        width: 12px;
+    }
+}
+
+#navbar{
+    display: none;
+}
+#layout{
+    display: none;
+}
+#footer{
+    display: none;
 }

@@ -3,12 +3,14 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import { useNavigate } from "react-router-dom";
 
 import React from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const EditData = () => {
+    const mynav = useNavigate();
     const { id } = useParams();
     const [mydata, setMydata] = useState({});
     const loadData = (() => {
@@ -31,6 +33,7 @@ const EditData = () => {
         axios.put(url, mydata).then((res) => {
             //         console.log(res.data);
             //         alert("data updated!!!");
+            mynav("/display");
             toast.success("Data edited Successfully!!!");
         })
     }
@@ -73,6 +76,9 @@ const EditData = () => {
                     <Form id='form' style={{ width: '400px', color: 'black' }}>
                         <br />
 
+                        <Form.Group className="mb-3">
+                            <Form.Control type="text" name='id' value={mydata.id} onChange={handleInput} />
+                        </Form.Group>
                         <Form.Group className="mb-3">
                             <Form.Control type="text" name='rollno' value={mydata.rollno} onChange={handleInput} />
                         </Form.Group>
