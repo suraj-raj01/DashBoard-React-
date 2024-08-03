@@ -6,6 +6,20 @@
       "name": "SURAJ KUMAR",
       "city": "BAIRGANIA, SITAMARHI, BIHAR, INDIA",
       "fees": "19,125.00"
+    },
+    {
+      "id": "AU210456",
+      "rollno": "R21ET1CS0020",
+      "name": "BITTU SHAH",
+      "city": "KATEYA, GOPALGANJ, BIHAR",
+      "fees": "19,125.00"
+    },
+    {
+      "id": "AU210450",
+      "rollno": "R21ET1CS0050",
+      "name": "RAJAN KUMAR",
+      "city": "PARSAUNI,BAIRGANIA,SITAMARHI",
+      "fees": "19,125.00"
     }
   ]
 }

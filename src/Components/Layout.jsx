@@ -115,7 +115,7 @@ const Layout = () => {
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <Nav.Link as={Link} target="_blank" to="https://github.com/suraj-raj01/DashBoard-React-.git"><i className="pi pi-github"></i></Nav.Link>
                             &nbsp;&nbsp;&nbsp;
-                            <Nav.Link as={Link} to="/"><i className="pi pi-cog pi-spin"></i></Nav.Link>
+                            <Nav.Link as={Link} target="_blank" to="https://www.linkedin.com/in/suraj-kumar-1965b0296/"><i className="pi pi-linkedin"></i></Nav.Link>
                             </div>
                             &nbsp;&nbsp;&nbsp;
                             <Form className="d-flex">
