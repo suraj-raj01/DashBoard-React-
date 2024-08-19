@@ -23,7 +23,7 @@ const Display = () => {
                     <td>{key.rollno}</td>
                     <td>{key.name}</td>
                     <td>{key.city}</td>
-                    <td>{key.fees+" INR "}</td>
+                    <td>{key.fees + " INR "}</td>
                 </tr>
             </>
         )
@@ -37,7 +37,7 @@ const Display = () => {
     return (
         <>
             <div style={{ backgroundColor: '', width: '100%', height: '100%', textAlign: 'center', color: 'black', borderRadius: '10px', padding: '15px 20px' }}>
-                <h2 style={{ position: 'sticky', top: '15px'}}>DISPLAY DATA</h2>
+                <h2 style={{ position: 'sticky', top: '15px' }}>DISPLAY DATA</h2>
                 <Table striped bordered hover id='table'>
                     <thead>
                         <tr>

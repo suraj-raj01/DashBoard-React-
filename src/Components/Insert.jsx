@@ -27,18 +27,20 @@ const Insert = () => {
             myNav1("/display");
         })
     }
+
     const jump1 = () => {
         myNav1("/home");
     }
     const jump2 = () => {
         myNav1("/search");
     }
+    
     return (
         <>
             <Container style={{ height: '100%', display: 'flex', alignItems: 'start', justifyContent: 'center', backgroundColor: '', borderRadius: '10px' }}>
                 <Form id='form' style={{ width: '400px', color: 'black' }}>
                     <br />
-                    <center><h2 style={{ padding: '0px 20px' }}>INSERT STUDENT DATA</h2></center><br /><br/>
+                    <center><h2 style={{ padding: '0px 20px' }}>INSERT STUDENT DATA</h2></center><br /><br />
                     <Form.Group className="mb-3">
                         <Form.Control type="text" name='id' placeholder="enrollment number" value={input.id} onChange={handleInput} />
                     </Form.Group>
@@ -58,7 +60,7 @@ const Insert = () => {
                     <Form.Group className="mb-3">
                         <Form.Control type="text" name='fees' placeholder="semester fees" value={input.fees} onChange={handleInput} />
                     </Form.Group>
-                    
+
                     <Button variant="info" onClick={handleSubmit}>
                         Submit
                     </Button>

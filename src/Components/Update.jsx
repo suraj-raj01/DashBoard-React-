@@ -14,10 +14,11 @@ const Update = () => {
     const loadData = () => {
         let url = "http://localhost:3000/Student";
         axios.get(url).then((res) => {
-            console.log(res.data);
+            // console.log(res.data);
             setMydata(res.data);
         })
     }
+    //Runs only on the first render
     useEffect(() => {
         loadData();
     }, [])
@@ -25,11 +26,12 @@ const Update = () => {
     const myDel = (myid) => {
         let url = `http://localhost:3000/Student/${myid}`;
         axios.delete(url).then((res) => {
-            console.log(res.data)
+            // console.log(res.data)
             toast.warning("Record deleted Successfully!!");
             loadData();
         })
     }
+    // this function will go to the EditData page
     const myEdit = (myid) => {
         myNav(`/myedit/${myid}`)    // /myedit/101
     }

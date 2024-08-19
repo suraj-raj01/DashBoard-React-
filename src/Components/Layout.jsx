@@ -19,13 +19,13 @@ import Modal from 'react-bootstrap/Modal';
 import axios from 'axios';
 function myClick() {
     setTimeout(
-      function() {
-        document.getElementById('navbar').style.display='block';
-        document.getElementById('layout').style.display='block';
-        document.getElementById('footer').style.display='block';
-      }, 1000);
-  }
-  myClick();
+        function () {
+            document.getElementById('navbar').style.display = 'block';
+            document.getElementById('layout').style.display = 'block';
+            document.getElementById('footer').style.display = 'block';
+        }, 700);
+}
+myClick();
 
 const Layout = () => {
     const navigate = useNavigate();
@@ -35,16 +35,19 @@ const Layout = () => {
     const [userid, setUserid] = useState("");
     const [pwd, setPwd] = useState("");
 
+// ---------------------for registration-------------------------
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
+// -------------------------for login----------------------------
     const [showlogin, setShowlogin] = useState(false);
     const handleCloselogin = () => setShowlogin(false);
     const handleShowlogin = () => setShowlogin(true);
-
+    
+// useNavigate is basically used for the jump one page to another page
     const mynav = useNavigate();
-
+// -----------------------------------------------------------
     // handle Register code
     const handleInput = (e) => {
         let name = e.target.name;
@@ -57,10 +60,10 @@ const Layout = () => {
         let url = "http://localhost:3000/Customer";
         axios.post(url, input).then((res) => {
             setShow(false);
-            toast.success("You are Succesfully Regitered!!!");
+            toast.success("You are Succesfully Registered!!!");
         })
     }
-
+// -----------------------------------------------------------
     // Login form handle code
     const handleLogin = () => {
         let api = `http://localhost:3000/Customer?userid=${userid}`
@@ -71,7 +74,7 @@ const Layout = () => {
                     localStorage.setItem("uemail", res.data[0].email)
                     mynav("/home");
                     setShowlogin(false)
-                    toast.success("Welcome Mr. "+res.data[0].name)
+                    toast.success("Welcome Mr. " + res.data[0].name)
                 }
                 else {
                     toast.error("Wrong Password!!");
@@ -84,7 +87,8 @@ const Layout = () => {
         })
     }
 
-    function searchData() {
+    // --------------this function helps jump to another page---------------
+        function searchData() {
         navigate("/search");
         toast.success("Search Data here...");
     }
@@ -92,6 +96,7 @@ const Layout = () => {
     return (
         <>
             <div>
+            {/* -------------------------------Navbar Code-------------------------------------- */}
                 <Navbar expand="lg" id='navbar'>
                     <Container fluid>
                         <Navbar.Brand as={Link} to="home" style={{ fontWeight: 'bold' }}>Dashboard</Navbar.Brand>
@@ -108,14 +113,14 @@ const Layout = () => {
                                 <Nav.Link as={Link} to="update">Update</Nav.Link>
                                 <Nav.Link as={Link} to="display">Display</Nav.Link>
                             </Nav>
-                            <div style={{display:'flex'}}>
-                            <Nav.Link as={Link} to="/" onClick={handleShowlogin}><i className="pi pi-sign-in"></i></Nav.Link>
-                            &nbsp;&nbsp;&nbsp;&nbsp;
-                            <Nav.Link as={Link} to="/" onClick={handleShow}><i className="pi pi-user-plus"></i></Nav.Link>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <Nav.Link as={Link} target="_blank" to="https://github.com/suraj-raj01/DashBoard-React-.git"><i className="pi pi-github"></i></Nav.Link>
-                            &nbsp;&nbsp;&nbsp;
-                            <Nav.Link as={Link} target="_blank" to="https://www.linkedin.com/in/suraj-kumar-1965b0296/"><i className="pi pi-linkedin"></i></Nav.Link>
+                            <div style={{ display: 'flex' }}>
+                                <Nav.Link as={Link} to="/" onClick={handleShowlogin}><i className="pi pi-sign-in"></i></Nav.Link>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <Nav.Link as={Link} to="/" onClick={handleShow}><i className="pi pi-user-plus"></i></Nav.Link>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <Nav.Link as={Link} target="_blank" to="https://github.com/suraj-raj01/DashBoard-React-.git"><i className="pi pi-github"></i></Nav.Link>
+                                &nbsp;&nbsp;&nbsp;
+                                <Nav.Link as={Link} target="_blank" to="https://www.linkedin.com/in/suraj-kumar-1965b0296/"><i className="pi pi-linkedin"></i></Nav.Link>
                             </div>
                             &nbsp;&nbsp;&nbsp;
                             <Form className="d-flex">
@@ -130,11 +135,12 @@ const Layout = () => {
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
-                <div id='layout' style={{ margin: '10px 0px', height: '75vh', width: '100%', borderRadius: '10px', boxShadow: '0px 0px 2px grey',backgroundColor:'#fff' }} >
+                <div id='layout'>
                     <Outlet />
                 </div>
                 {/*<hr />*/}
 
+{/* ------------------------------------footer pate----------------------------------- */}
                 <div id="footer" style={{ margin: '5px 0px', fontWeight: '500', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
                     <Row>
                         <Col ></Col>
@@ -146,7 +152,9 @@ const Layout = () => {
                 </div>
             </div>
 
-        {/* // Register modal code */}
+{/* ------------------------------------------------------------------------------------ */}
+          
+            {/* // Register modal code */}
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
                     <Modal.Title>User Registration Form</Modal.Title>
@@ -189,6 +197,7 @@ const Layout = () => {
                 </Modal.Footer>
             </Modal>
 
+{/* --------------------------------------------------------------------------------------------- */}
             {/* // Login Data modal code */}
 
             <Modal show={showlogin} onHide={handleCloselogin}>

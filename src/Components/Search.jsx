@@ -22,7 +22,7 @@ const Search = () => {
                     <td>{key.rollno}</td>
                     <td>{key.name}</td>
                     <td>{key.city}</td>
-                    <td>{key.fees+" INR"}</td>
+                    <td>{key.fees + " INR"}</td>
                 </tr>
             </>
         )

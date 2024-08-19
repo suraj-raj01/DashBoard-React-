@@ -1,7 +1,9 @@
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+    // useNavigate is basically used for the jump one page to another page
     const myNav1 = useNavigate();
+
     const jump1 = () => {
         myNav1("/home");
     }
