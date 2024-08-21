@@ -99,7 +99,7 @@ const Layout = () => {
             {/* -------------------------------Navbar Code-------------------------------------- */}
                 <Navbar expand="lg" id='navbar'>
                     <Container fluid>
-                        <Navbar.Brand as={Link} to="home" style={{ fontWeight: 'bold' }}>Dashboard</Navbar.Brand>
+                        <Navbar.Brand as={Link} to="home" style={{ fontWeight: 'bold' }}>CRUD APP</Navbar.Brand>
                         <Navbar.Toggle aria-controls="navbarScroll" />
                         <Navbar.Collapse id="navbarScroll">
                             <Nav
@@ -145,7 +145,7 @@ const Layout = () => {
                     <Row>
                         <Col ></Col>
                         <Col xs={12}>
-                            <p>DASHBOARD Created by @SURAJKUMAR <br />Everythig is reserved by Copyright ©mydashboard.com
+                            <p>Crud-App Created by @SURAJKUMAR <br />Everythig is reserved by Copyright ©mydashboard.com
                             </p></Col>
                         <Col></Col>
                     </Row>

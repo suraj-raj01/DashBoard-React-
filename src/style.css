@@ -26,7 +26,7 @@ body{
     background-color:'transparent';
 }
 #form input::placeholder{
-    color: #808099af;
+    color: #505060af;
 }
 
 #table th{

@@ -1,10 +1,31 @@
 {
   "Student": [
     {
-      "id": "12",
+      "id": "1",
       "rollno": "R21ET1CS0066",
       "name": "SURAJ KUMAR",
-      "city": "PARSAUNI, BAIRGANIA, SITAMARHI",
+      "city": "BHOPAL (MP)",
+      "fees": "40000"
+    },
+    {
+      "id": "2",
+      "rollno": "R21ET1CS0050",
+      "name": "RAJAN KUMAR",
+      "city": "BHOPAL (MP)",
+      "fees": "40000"
+    },
+    {
+      "id": "3",
+      "rollno": "R21ET1CS0020",
+      "name": "BITTU KUMAR",
+      "city": "GOPALGANJ",
+      "fees": "45000"
+    },
+    {
+      "id": "4",
+      "rollno": "R21ET1CS0025",
+      "name": "HARIOM KUMAR",
+      "city": "SITAMARHI (BIHAR)",
       "fees": "40000"
     }
   ]
