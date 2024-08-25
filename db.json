@@ -1,32 +1,18 @@
 {
   "Student": [
     {
-      "id": "1",
+      "id": "AU210488",
       "rollno": "R21ET1CS0066",
       "name": "SURAJ KUMAR",
       "city": "BHOPAL (MP)",
-      "fees": "40000"
+      "fees": "60000"
     },
     {
-      "id": "2",
-      "rollno": "R21ET1CS0050",
+      "id": "AU210488",
+      "rollno": "R21ET1CS0018",
       "name": "RAJAN KUMAR",
-      "city": "BHOPAL (MP)",
-      "fees": "40000"
-    },
-    {
-      "id": "3",
-      "rollno": "R21ET1CS0020",
-      "name": "BITTU KUMAR",
-      "city": "GOPALGANJ",
+      "city": "BHOPAL (MAP)",
       "fees": "45000"
-    },
-    {
-      "id": "4",
-      "rollno": "R21ET1CS0025",
-      "name": "HARIOM KUMAR",
-      "city": "SITAMARHI (BIHAR)",
-      "fees": "40000"
     }
   ]
 }

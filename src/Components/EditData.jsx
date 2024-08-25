@@ -31,10 +31,10 @@ const EditData = () => {
         let url = `http://localhost:3000/Student/${id}`;
         console.log(mydata);
         axios.put(url, mydata).then((res) => {
-                    console.log(res.data);
-            //         alert("data updated!!!");
-            mynav("/display");
             toast.success("Data edited Successfully!!!");
+                    console.log(res.data);
+                    alert("data updated!!!");
+            mynav("/display");
         })
     }
 
