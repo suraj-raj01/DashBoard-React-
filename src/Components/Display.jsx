@@ -21,9 +21,9 @@ const Display = () => {
                 <tr>
                     <td>{key.id}</td>
                     <td>{key.rollno}</td>
-                    <td>{key.name}</td>
+                    <td>{key.name.toUpperCase()}</td>
                     <td>{key.city}</td>
-                    <td>{key.fees + " INR "}</td>
+                    <td>{key.fees + ".00 ₹"}</td>
                 </tr>
             </>
         )

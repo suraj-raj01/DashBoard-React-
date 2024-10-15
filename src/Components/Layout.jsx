@@ -74,7 +74,7 @@ const Layout = () => {
                     localStorage.setItem("uemail", res.data[0].email)
                     mynav("/home");
                     setShowlogin(false)
-                    toast.success("Welcome Mr. " + res.data[0].name)
+                    toast.success("Welcome Mr. " + res.data[0].name.toUpperCase())
                 }
                 else {
                     toast.error("Wrong Password!!");
@@ -99,7 +99,7 @@ const Layout = () => {
             {/* -------------------------------Navbar Code-------------------------------------- */}
                 <Navbar expand="lg" id='navbar'>
                     <Container fluid>
-                        <Navbar.Brand as={Link} to="home" style={{ fontWeight: 'bold' }}>CRUD APP</Navbar.Brand>
+                        <Navbar.Brand as={Link} to="home" style={{ fontWeight: 'bold' }}>FEES MANAGEMENT</Navbar.Brand>
                         <Navbar.Toggle aria-controls="navbarScroll" />
                         <Navbar.Collapse id="navbarScroll">
                             <Nav

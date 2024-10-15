@@ -5,17 +5,23 @@ import Button from 'react-bootstrap/Button';
 import Table from "react-bootstrap/Table";
 import { Link, useNavigate } from "react-router-dom";
 import Nav from 'react-bootstrap/Nav';
-const Search = () => {
+const SearchByName = () => {
     const myNav1 = useNavigate();
-    const [rollno, setRollno] = useState("");
+    const [name, setName] = useState("");
     const [mydata, setMydata] = useState([]);
-    const mySearch = () => {
-        let url = `http://localhost:3000/Student?rollno=${rollno}`
+    const mySearch = (e) => {
+        let stdname = e.target.value;
+        setName(stdname);
+        let url = `http://localhost:3000/Student/`
         axios.get(url).then((res) => {
             setMydata(res.data);
+            console.log(res.data);
         });
     }
     const ans = mydata.map((key) => {
+        const str = key.name.toUpperCase();
+        const status = str.includes(name.toUpperCase());
+        if(status){
         return (
             <>
                 <tr>
@@ -27,6 +33,7 @@ const Search = () => {
                 </tr>
             </>
         )
+    }
     })
     const jump1 = () => {
         myNav1("/insert");
@@ -34,8 +41,8 @@ const Search = () => {
     const jump2 = () => {
         myNav1("/update");
     }
-    const searchByName = () =>{
-        myNav1("/searchbyname");
+    const search = () =>{
+        myNav1("/search")
     }
     return (
         <div style={{ backgroundColor: '', width: '100%', height: '100%', textAlign: 'center', color: 'black', borderRadius: '10px', padding: '15px 20px' }}>
@@ -49,13 +56,12 @@ const Search = () => {
                 <Form.Control style={{ width: '300px' }}
                     className="me-2"
                     aria-label="Search"
-                    placeholder='Enter rollno...'
-                    value={rollno} onChange={(e) => {
-                        setRollno(e.target.value)
-                    }}
+                    placeholder='Enter student name....'
+                    value={name} 
+                    onChange={mySearch}
                 />
-                <Button variant="outline-info" onClick={mySearch}>Search</Button>      
-            <Nav.Link id="searchbyname" onClick={searchByName}>Search by name ⇨</Nav.Link>    
+                <Button variant="outline-info">Search</Button>      
+            <Nav.Link id="searchbyname" onClick={search}>Search by Rollno ⇨</Nav.Link>    
             </Form>
             <br />
             <Table striped bordered hover id='table'>
@@ -78,4 +84,4 @@ const Search = () => {
     )
 }
 // for search in json we have to run command url/?name="value".
-export default Search;
+export default SearchByName;

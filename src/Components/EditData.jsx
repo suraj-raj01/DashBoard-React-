@@ -2,7 +2,6 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
 import { useNavigate } from "react-router-dom";
 
 import React from "react";
@@ -27,13 +26,13 @@ const EditData = () => {
         let value = e.target.value;
         setMydata(values => ({ ...values, [name]: value }));
     }
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault();
         let url = `http://localhost:3000/Student/${id}`;
         console.log(mydata);
         axios.put(url, mydata).then((res) => {
             toast.success("Data edited Successfully!!!");
-                    console.log(res.data);
-                    alert("data updated!!!");
+            console.log(res.data);
             mynav("/display");
         })
     }
@@ -73,7 +72,7 @@ const EditData = () => {
                     {/*<br/>*/}
                     {/*<button onClick={handleSubmit}> Data Save</button>*/}
 
-                    <Form id='form' style={{ width: '400px', color: 'black' }}>
+                    <Form id='editform'>
                         <br />
 
                         <Form.Group className="mb-3">
@@ -94,10 +93,11 @@ const EditData = () => {
                         <Form.Group className="mb-3">
                             <Form.Control type="text" name='fees' value={mydata.fees} onChange={handleInput} />
                         </Form.Group>
-                        <br />
-                        <Button variant="primary" onClick={handleSubmit}>
+                        <Form.Group className="mb-3">
+                        <button id="btns" onClick={handleSubmit}>
                             Submit
-                        </Button>
+                        </button>
+                        </Form.Group>
                     </Form>
                 </div>
             </div>
