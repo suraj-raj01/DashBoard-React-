@@ -2,17 +2,17 @@
   "Student": [
     {
       "id": "AU210488",
-      "rollno": "R21ET1CS0066",
-      "name": "SURAJ KUMAR",
+      "rollno": "R21ET1CS0018",
+      "name": "RAJAN KUMAR",
       "city": "BHOPAL (MP)",
-      "fees": "65000"
+      "fees": "40000"
     },
     {
       "id": "AU210488",
-      "rollno": "R21ET1CS0018",
-      "name": "RAJAN KUMAR",
-      "city": "BHOPAL (MAP)",
-      "fees": "45000"
+      "rollno": "R21ET1CS0066",
+      "name": "Suraj Kumar",
+      "city": "BIHAR",
+      "fees": "40000"
     }
   ],
   "Customer": [
@@ -64,6 +64,13 @@
       "email": "rajank123@gmail.com",
       "userid": "rajan123",
       "password": "rajan123"
+    },
+    {
+      "id": "3ba3",
+      "name": "abcd",
+      "email": "abcd123@gmail.com",
+      "userid": "abcd123",
+      "password": "abcd123"
     }
   ]
 }
