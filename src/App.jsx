@@ -7,6 +7,7 @@ import Container from "react-bootstrap/esm/Container";
 import Display from "./Components/Display";
 import Update from "./Components/Update";
 import EditData from "./Components/EditData.jsx";
+import SearchByName from "./Components/SearchByName.jsx";
 const App = () => {
 
   return (
@@ -22,6 +23,7 @@ const App = () => {
               <Route path="update" element={<Update />} />
               <Route path="display" element={<Display />} />
               <Route path="myedit/:id" element={<EditData />} />
+              <Route path="searchbyname" element={<SearchByName/>} />
             </Route>
           </Routes>
         </BrowserRouter>
