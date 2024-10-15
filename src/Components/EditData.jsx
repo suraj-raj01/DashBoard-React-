@@ -53,7 +53,7 @@ const EditData = () => {
                 justifyContent: 'center'
             }}>
                 <h2> EDIT STUDENT DATA </h2>
-                <div style={
+                <div id="edit" style={
                     {
                         height: '480px',
                         width: '600px',
