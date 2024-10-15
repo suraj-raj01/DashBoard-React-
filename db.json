@@ -5,7 +5,7 @@
       "rollno": "R21ET1CS0066",
       "name": "SURAJ KUMAR",
       "city": "BHOPAL (MP)",
-      "fees": "60000"
+      "fees": "65000"
     },
     {
       "id": "AU210488",
@@ -13,6 +13,57 @@
       "name": "RAJAN KUMAR",
       "city": "BHOPAL (MAP)",
       "fees": "45000"
+    }
+  ],
+  "Customer": [
+    {
+      "id": "1",
+      "name": "SURAJ",
+      "email": "suraj34#@gmail.com",
+      "userid": "suraj24",
+      "password": "suraj123"
+    },
+    {
+      "id": "6f78",
+      "name": "suraj",
+      "email": "surajkumarbgu83@gmail.com",
+      "userid": "sruaj123",
+      "password": "suraj1452"
+    },
+    {
+      "id": "4324",
+      "name": "adfasdf",
+      "email": "surajkumarbgu83@gmail.com",
+      "userid": "sruaj123",
+      "password": "safsad"
+    },
+    {
+      "id": "0080",
+      "name": "SURAJ KUMAR",
+      "email": "surajkumarbgu83@gmail.com",
+      "userid": "suraj123",
+      "password": "suraj123"
+    },
+    {
+      "id": "5827",
+      "name": "abcd",
+      "email": "abcd@gmail.com",
+      "userid": "abcd123",
+      "password": "abcd@123"
+    },
+    {
+      "id": "29ad",
+      "name": "abcdefg",
+      "email": "abcd@gmail.com",
+      "userid": "abcd123",
+      "password": "abcd@123"
+    },
+    {
+      "id": "256f",
+      "name": "Rajan Kumar ",
+      "email": "rajank123@gmail.com",
+      "userid": "rajan123",
+      "password": "rajan123"
     }
   ]
 }
