@@ -1,5 +1,5 @@
 body{
-    background-color: white;
+    background-color: #ffffff;
 }
 #layout{
     margin: 10px 0px;
@@ -16,6 +16,7 @@ body{
 }
 #navbar  a{
     font-weight: 500;
+    color: #176179;
 }
 
 #form{
@@ -31,7 +32,7 @@ body{
     padding: 9px;
     margin-bottom: 20px;
     font-weight: bold;
-    background-color: black;
+    background-color: #176179;
     color: white;
     border: none;
     width: 90%;
@@ -73,7 +74,7 @@ body{
     padding: 9px;
     margin-bottom: 20px;
     font-weight: bold;
-    background-color: black;
+    background-color: #176179;
     color: white;
     border: none;
     width: 90%;
