@@ -87,7 +87,7 @@ const Insert = () => {
             <Form.Control
               type="text"
               name="city"
-              placeholder="address"
+              placeholder="course name"
               value={input.city}
               onChange={handleInput}
             />

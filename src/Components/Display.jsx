@@ -32,7 +32,7 @@ const Display = () => {
         myNav1("/update");
     }
     const jump2 = () => {
-        myNav1("/display");
+        myNav1("/home");
     }
     return (
         <>

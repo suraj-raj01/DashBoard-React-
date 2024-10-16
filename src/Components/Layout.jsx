@@ -72,9 +72,9 @@ const Layout = () => {
                 if (res.data[0].password == pwd) {
                     localStorage.setItem("uname", res.data[0].name)
                     localStorage.setItem("uemail", res.data[0].email)
+                    toast.success("Welcome Mr. " + res.data[0].name.toUpperCase())
                     mynav("/home");
                     setShowlogin(false)
-                    toast.success("Welcome Mr. " + res.data[0].name.toUpperCase())
                 }
                 else {
                     toast.error("Wrong Password!!");
@@ -122,8 +122,8 @@ const Layout = () => {
                                 &nbsp;&nbsp;&nbsp;
                                 <Nav.Link as={Link} target="_blank" to="https://www.linkedin.com/in/suraj-kumar-1965b0296/"><i className="pi pi-linkedin"></i></Nav.Link>
                             </div>
-                            &nbsp;&nbsp;&nbsp;
-                            <Form className="d-flex">
+                            
+                            {/* <Form className="d-flex">
                                 <Form.Control
                                     className="me-2"
                                     aria-label="Search"
@@ -131,7 +131,7 @@ const Layout = () => {
                                     type="search"
                                 />
                                 <Button variant="outline-info" onClick={searchData}>Search</Button>
-                            </Form>
+                            </Form> */}
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
@@ -145,7 +145,7 @@ const Layout = () => {
                     <Row>
                         <Col ></Col>
                         <Col xs={12}>
-                            <p>Crud-App Created by @SURAJKUMAR <br />Everythig is reserved by Copyright ©mydashboard.com
+                            <p>CRUD-Application Created by @_surajkumar <br />Everythig is reserved by Copyright ©myfeesmanagement.com
                             </p></Col>
                         <Col></Col>
                     </Row>
