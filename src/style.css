@@ -1,13 +1,20 @@
 body{
-    background-color: #ffffff;
+    background-color: whitesmoke;
+    /* background-image: url('https://cdn.pixabay.com/photo/2024/05/17/14/50/ai-generated-8768468_1280.png');
+    background-repeat: no-repeat;
+    background-position: 1250px 440px;
+    background-size: contain;
+    height: 300px; */
 }
 #layout{
     margin: 10px 0px;
     height: 75vh;
     width: 100%;
     border-radius: 10px;
-    box-shadow: 0px 0px 2px grey;
-    background-color: white;
+    box-shadow: 0px 0px 5px grey;
+}
+h2{
+    color: #176179;
 }
 #navbar{
     margin-top: 10px;
@@ -48,7 +55,6 @@ body{
     border-radius: 0px;
     text-transform: capitalize;
     border-radius: 5px;
-    background-color:'transparent';
     width: 90%;
     margin: auto;
 }
@@ -120,7 +126,7 @@ body{
     background-color: transparent;
     border: none;
     font-size: 30px;
-    color: gainsboro;
+    color: #176179;
 }
 #jump-btn2{
     position: fixed;
@@ -131,15 +137,15 @@ body{
     background-color: transparent;
     border: none;
     font-size: 30px;
-    color: gainsboro;
+    color: #176179;
 }
 #jump-btn1:hover{
     text-shadow: 0px 0px 15px gainsboro;
-    color: gray;
+    color: black;
 }
 #jump-btn2:hover{
     text-shadow: 0px 0px 15px gainsboro;
-    color: gray;
+    color: black;
 }
 @media (max-width:769px)
 {
