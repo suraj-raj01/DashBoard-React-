@@ -51,9 +51,9 @@ const SearchByName = () => {
                 setRollno(e.target.value)
             }} />
             <button id="search-btn" onClick={mySearch}>Search</button><br /> */}
-
+            <div id="search_div">
             <Form className="d-flex">
-                <Form.Control style={{ width: '300px' }}
+                <Form.Control id="search_form"
                     className="me-2"
                     aria-label="Search"
                     placeholder='Enter student name....'
@@ -61,8 +61,9 @@ const SearchByName = () => {
                     onChange={mySearch}
                 />
                 <Button variant="outline-info">Search</Button>      
-            <Nav.Link id="searchbyname" onClick={search}>Search by Rollno ⇨</Nav.Link>    
             </Form>
+            <Nav.Link id="searchbyname" onClick={search}>Search by rollno ⇨</Nav.Link>    
+            </div>
             <br />
             <Table striped bordered hover id='table'>
                 <thead>
