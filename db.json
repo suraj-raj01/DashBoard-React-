@@ -4,8 +4,22 @@
       "id": "AU210488",
       "rollno": "R21ET1CS0066",
       "name": "Suraj Kumar",
-      "city": "BIHAR",
-      "fees": "40000"
+      "city": "B.E (CSE)",
+      "fees": "44000"
+    },
+    {
+      "id": "AU210580",
+      "rollno": "R21ET1CS0065",
+      "name": "PAWAN KUMAR",
+      "city": "B.Tech (CSE)",
+      "fees": "45000"
+    },
+    {
+      "id": "AU210388",
+      "rollno": "R21ET1CS0049",
+      "name": "Rajan Kumar ",
+      "city": "B.E (CSE)",
+      "fees": "45000"
     }
   ],
   "Customer": [
